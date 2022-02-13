@@ -9,7 +9,7 @@ func NewPoem() Poem {
 }
 
 //функция не изменяем пришедший объект, так что просто без *, работаем с его копией
-func (p Poem) stats() (numVowels, numConsonats int) {
+func (p Poem) Stats() (numVowels, numConsonats int) {
 	for _, stanza := range p {
 		for _, line := range stanza {
 			for _, char := range line {
